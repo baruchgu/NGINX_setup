@@ -1,6 +1,6 @@
 # NGINX setup tool
   
-![NGINX logo](assets/NGINX.phg)
+![NGINX logo](assets/NGINX.png)
 
 ---
 
