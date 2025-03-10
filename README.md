@@ -1,5 +1,8 @@
+[![Test](https://img.shields.io/badge/NGINX%20setup%20tool-8A2BE2)]([https://](https://img.shields.io/badge/NGINX%20setup%20tool-8A2BE2))
+[![GitHub contributors](https://img.shields.io/github/contributors/baruchgu/ngnix_setup)](https://github.com/baruchgu/ngnix_setup/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/coderjojo/creative-profile-readme)](https://github.com/baruchgu/ngnix_setup/issues)
+
 # NGINX setup tool
-  
 ![NGINX logo](assets/NGINX.png)
 
 ---
