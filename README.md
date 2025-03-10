@@ -6,13 +6,13 @@
 
 ## Project Overview
 Automated way to setup and configure NGINX Web server on Linux VMWare machine without manual steps
-✅ check if Nginx is installed. If not - install
-✅ setup user-directories 
-✅ setup virtual host domain with name gived by promt
-✅ setup authentication
-✅ setup authentication with PAM
-✅ setup CGI scripting ability
-✅ Interactive and CLI input arguments are supported
+✅ check if Nginx is installed. If not - install   
+✅ setup user-directories    
+✅ setup virtual host domain with name gived by promt  
+✅ setup authentication  
+✅ setup authentication with PAM  
+✅ setup CGI scripting ability  
+✅ Interactive and CLI input arguments are supported  
 
 ## 📁 Folder Structure
 - **📁 <span style="display: inline-block; margin-right: 20px;">[nginx/](./)</span>** Root directory  
