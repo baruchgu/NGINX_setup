@@ -1,6 +1,6 @@
 [![Test](https://img.shields.io/badge/NGINX%20setup%20tool-8A2BE2)]([https://](https://img.shields.io/badge/NGINX%20setup%20tool-8A2BE2))
-[![GitHub contributors](https://img.shields.io/github/contributors/baruchgu/ngnix_setup)](https://github.com/baruchgu/ngnix_setup/graphs/contributors)
-[![GitHub issues](https://img.shields.io/github/issues/coderjojo/creative-profile-readme)](https://github.com/baruchgu/ngnix_setup/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/baruchgu/nginx_setup)](https://github.com/baruchgu/nginx_setup/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/coderjojo/creative-profile-readme)](https://github.com/baruchgu/nginx_setup/issues)
 
 # NGINX setup tool
 ![NGINX logo](assets/NGINX.png)
@@ -16,15 +16,15 @@ Automated way to setup and configure NGINX Web server on Linux VMWare machine wi
 ✅ setup authentication with PAM  
 ✅ setup CGI scripting ability  
 ✅ Interactive and CLI input arguments are supported  
-✅ The tool runs under the root credentials, if not root - sudo is used 
+✅ The tool runs under the root credentials, if not root - sudo is used   
 ✅ Correct exit status is provided. 0 - sucess, else - fails.
 
 ## 📁 Folder Structure
-- **📁 <span style="display: inline-block; margin-right: 20px;">[nginx/](./)</span>** Root directory  
+- **📁 <span style="display: inline-block; margin-right: 20px;">[nginx_setup/](./)</span>** Root directory  
   - 📄 <span style="display: inline-block; margin-right: 20px;">[README.md](./README.md)</span> Project overview, usage, installation instructions  
   - 📄 <span style="display: inline-block; margin-right: 20px;">[LICENSE](./LICENSE)</span> Open-source license  
   - 📄 <span style="display: inline-block; margin-right: 20px;">[webserver_setup.sh](./webserver_setup.sh)</span> Main BASH script for Nginx setup  
-  - 📄 <span style="display: inline-block; margin-right: 20px;">[task.md](./task.md)</span> Task description  
+  - 📄 <span style="display: inline-block; margin-right: 20px;">[TASK.md](./TASK.md)</span> Task description  
   - 📄 <span style="display: inline-block; margin-right: 20px;">[CONTRIBUTERS.md](./CONTRIBUTERS.md)</span>
 
 ## Getting Started
@@ -36,8 +36,8 @@ Ensure that your system meets the following requirements:
 ### Cloning the Repository:
 - How to clone the repository:
 ```bash
-git clone https://github.com/baruchgu/ngnix_setup.git
-cd ngnix_setup
+git clone https://github.com/baruchgu/nginx_setup.git
+cd nginx_setup
 ```
 ### Running the Setup:
 - Steps to run the setup tool:
