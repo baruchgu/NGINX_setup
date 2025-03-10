@@ -25,7 +25,7 @@ Automated way to setup and configure NGINX Web server on Linux VMWare machine wi
   - 📄 <span style="display: inline-block; margin-right: 20px;">[LICENSE](./LICENSE)</span> Open-source license  
   - 📄 <span style="display: inline-block; margin-right: 20px;">[webserver_setup](./webserver_setup.sh)</span> Main script for Nginx setup (bash)  
   - 📄 <span style="display: inline-block; margin-right: 20px;">[TASK](./TASK.md)</span> Task description  
-  - 📄 <span style="display: inline-block; margin-right: 20px;">[CONTRIBUTERS](./CONTRIBUTERS.md)</span>
+  - 📄 <span style="display: inline-block; margin-right: 20px;">[CONTRIBUTORS](./CONTRIBUTORS.md)</span>
 
 ## Getting Started
 ### Pre-Requisites:
@@ -90,5 +90,5 @@ NGINX Web server setup tool:
 [License](./LICENSE)
 
 ## 🙇 Credit
-Many of code and ideas were copied from README files of [Tal](https://github.com/mendelsontal) in his GitHub projects. Thanks
+Many of code and ideas were copied from README files of [Tal](https://github.com/mendelsontal) in his GitHub projects. Thanks :+1:
 
