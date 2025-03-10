@@ -10,4 +10,4 @@ Create shell script that will setup user_dir, auth, auth with pam and CGI script
 - Provide argument based system for installing and configuring each of the options above.
 
 
-[Link](https://gitlab.com/vaiolabs-io/nginx-shallow-dive)
+[NGINX presentation](https://gitlab.com/vaiolabs-io/nginx-shallow-dive)
