@@ -8,7 +8,7 @@
 ---
 
 ## Project Overview
-Automated way to setup and configure NGINX Web server on Linux VMWare machine without manual steps
+Automated way to setup and configure NGINX Web server on Linux VMWare machine without manual steps.   
 ✅ check if Nginx is installed. If not - install   
 ✅ setup user-directories    
 ✅ setup virtual host domain with name gived by promt  
@@ -21,11 +21,11 @@ Automated way to setup and configure NGINX Web server on Linux VMWare machine wi
 
 ## 📁 Folder Structure
 - **📁 <span style="display: inline-block; margin-right: 20px;">[nginx_setup/](./)</span>** Root directory  
-  - 📄 <span style="display: inline-block; margin-right: 20px;">[README.md](./README.md)</span> Project overview, usage, installation instructions  
+  - 📄 <span style="display: inline-block; margin-right: 20px;">[README](./README.md)</span> Project overview, usage, installation instructions  
   - 📄 <span style="display: inline-block; margin-right: 20px;">[LICENSE](./LICENSE)</span> Open-source license  
-  - 📄 <span style="display: inline-block; margin-right: 20px;">[webserver_setup.sh](./webserver_setup.sh)</span> Main BASH script for Nginx setup  
-  - 📄 <span style="display: inline-block; margin-right: 20px;">[TASK.md](./TASK.md)</span> Task description  
-  - 📄 <span style="display: inline-block; margin-right: 20px;">[CONTRIBUTERS.md](./CONTRIBUTERS.md)</span>
+  - 📄 <span style="display: inline-block; margin-right: 20px;">[webserver_setup](./webserver_setup.sh)</span> Main script for Nginx setup (bash)  
+  - 📄 <span style="display: inline-block; margin-right: 20px;">[TASK](./TASK.md)</span> Task description  
+  - 📄 <span style="display: inline-block; margin-right: 20px;">[CONTRIBUTERS](./CONTRIBUTERS.md)</span>
 
 ## Getting Started
 ### Pre-Requisites:
@@ -46,7 +46,7 @@ chmod +x webserver_setup.sh
 ./webserver_setup.sh
 ```
 ## Dependecies
-During the run the tool installs the following packages
+During the run the tool installs the following packages  
 ✅ nginx  
 ✅ apache2-utils  
 ✅ nginx-extras  
@@ -88,3 +88,7 @@ NGINX Web server setup tool:
 
 ## License
 [License](./LICENSE)
+
+## Credit
+Many of code and ideas were copied from README files of [Tal](https://github.com/mendelsontal) in his GitHub projects. Thanks
+
