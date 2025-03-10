@@ -30,7 +30,7 @@ Automated way to setup and configure NGINX Web server on Linux VMWare machine wi
 ## Getting Started
 ### Pre-Requisites:
 Ensure that your system meets the following requirements:
-- Bash and curl installed
+- Bash, git and curl installed
 - Linux based system
 
 ### Cloning the Repository:
@@ -63,7 +63,7 @@ Print the usage menu and exit
 ./webserver_setup.sh -h  
 ``` 
 Output:
-```bash
+`cernse``bash
 NGINX Web server setup tool:
 	Options:
 	i) Install NGINX server 
@@ -89,6 +89,6 @@ NGINX Web server setup tool:
 ## License
 [License](./LICENSE)
 
-## Credit
+## 🙇 Credit
 Many of code and ideas were copied from README files of [Tal](https://github.com/mendelsontal) in his GitHub projects. Thanks
 
