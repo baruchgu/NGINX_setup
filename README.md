@@ -63,7 +63,7 @@ Print the usage menu and exit
 ./webserver_setup.sh -h  
 ``` 
 Output:
-`cernse``bash
+```bash
 NGINX Web server setup tool:
 	Options:
 	i) Install NGINX server 
