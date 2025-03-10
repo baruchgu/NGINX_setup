@@ -1,24 +1,28 @@
 #!/usr/bin/env bash 
 ############## Start Safe Header ###########################
 #Develop by: Baruch Gudesblat
-#Purpose: NGINX Web server intactive setup tool
-#Date: 07/03/2025
+#Purpose: NGINX Web server setup tool
+#Date: 10/03/2025
 #Version: 1.0.0
 
 ############### End Safe Header ##########################
 
 
-#if [[ $EUID -ne 0 ]]; then
-#    eval sudo su -c $0 $*
-#    exit $?
-#fi
+if [[ $EUID -ne 0 ]]; then
+    sudo su -c "$0 $@"
+    exit $?
+fi
 
 
 function main(){
    opt=$1
    while [[ ${opt:-} != 'q' ]]; do
-      print_menu
-      read -r -p "Your choose: " opt
+      if [[ $opt == -* ]]; then
+         opt=${opt:1}
+      else 
+         print_menu
+         read -r -p "Your choose: " opt
+      fi
       case "$opt" in
          i|I) install_webserver ;;
          v|V) config_virtual_host ;;
@@ -125,7 +129,7 @@ EOI
 "
 
     # test it. 200 is success
-    curl -I http://localhost/~$SUDO_USER/index.html | grep -wq 200
+    curl -I http://localhost/~$SUDO_USER/index.html |& grep -wq 200
     return $?
 }
 
@@ -179,7 +183,7 @@ EOI
     systemctl restart nginx
 
     # test it. 200 is success
-    curl -I http://$vname/index.html | grep -wq 200
+    curl -I http://$vname/index.html |& grep -wq 200
     return $?
 }
 
@@ -221,7 +225,7 @@ EOI
     systemctl restart nginx
 
     # Test Basic Authentication
-    curl -u ${SUDO_USER}:1144 -I http://localhost/secure/ | grep -wq 200
+    curl -u ${SUDO_USER}:1144 -I http://localhost/secure/ |& grep -wq 200
     return $?
 }
 
@@ -266,7 +270,7 @@ Test Page for PAM Auth
 EOI
 
     # Test Basic Authentication
-    curl -u ${SUDO_USER}:1144 -I http://localhost/auth-pam/ | grep -wq 200
+    curl -u ${SUDO_USER}:1144 -I http://localhost/auth-pam/ |& grep -wq 200
     return $?
 
 }
@@ -309,7 +313,7 @@ EOI
     systemctl restart fcgiwrap
 
     # Test CGI scripting
-    curl -I http://localhost/cgi-bin/test.cgi | grep -wq 200
+    curl -I http://localhost/cgi-bin/test.cgi |& grep -wq 200
     return $?
 }
 
@@ -322,5 +326,6 @@ if [[ $- != *i* ]]; then
    set -o errexit
    set -o pipefail
    main "$@"
+   exit $?
 fi
 

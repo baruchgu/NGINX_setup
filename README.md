@@ -13,6 +13,8 @@ Automated way to setup and configure NGINX Web server on Linux VMWare machine wi
 ✅ setup authentication with PAM  
 ✅ setup CGI scripting ability  
 ✅ Interactive and CLI input arguments are supported  
+✅ The tool runs under the root credentials, if not root - sudo is used 
+✅ Correct exit status is provided. 0 - sucess, else - fails.
 
 ## 📁 Folder Structure
 - **📁 <span style="display: inline-block; margin-right: 20px;">[nginx/](./)</span>** Root directory  
@@ -31,8 +33,8 @@ Ensure that your system meets the following requirements:
 ### Cloning the Repository:
 - How to clone the repository:
 ```bash
-git clone https://github.com/baruchgu/ngnix.git
-cd ngnix
+git clone https://github.com/baruchgu/ngnix_setup.git
+cd ngnix_setup
 ```
 ### Running the Setup:
 - Steps to run the setup tool:
@@ -42,24 +44,24 @@ chmod +x webserver_setup.sh
 ```
 ## Dependecies
 During the run the tool installs the following packages
-✅ nginx
-✅ apache2-utils
-✅ nginx-extras
-✅ libpam0g-dev
-✅ libpam-modules
-✅ fcgiwrap
-✅ spawn-fcgi
+✅ nginx  
+✅ apache2-utils  
+✅ nginx-extras  
+✅ libpam0g-dev  
+✅ libpam-modules  
+✅ fcgiwrap  
+✅ spawn-fcgi  
 
 ## Usage and Examples:
 
 ### Help:
-Print the menu and exit
+Print the usage menu and exit
 ```bash
 ./webserver_setup.sh -h  
 ``` 
 Output:
 ```bash
-**NGINX Web server setup tool:**
+NGINX Web server setup tool:
 	Options:
 	i) Install NGINX server 
 	v) Configure Virtual Hostings
@@ -82,4 +84,4 @@ Output:
 ``` 
 
 ## License
-- [License](./LICENSE)
+[License](./LICENSE)
